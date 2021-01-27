@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuitDownMom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiet down Mom please" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vh-WN-R1O">
+                                <rect key="frame" x="0.0" y="44" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TO0-3o-SH8">
+                                <rect key="frame" x="0.0" y="84.5" width="414" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Play Audio">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EEI-eM-jDz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-P8-DPK">
+                                <rect key="frame" x="0.0" y="122.5" width="414" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop Audio">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOJ-i8-B3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H4-hE-Z6q">
+                                <rect key="frame" x="0.0" y="160.5" width="414" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Pause Audio">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2C-nt-rne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYN-oG-3Qv">
+                                <rect key="frame" x="0.0" y="198.5" width="414" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Change Volume">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeVolume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jh9-8K-mw4"/>
+                                    <action selector="pauseAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7T9-bu-IJR"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ulj-wC-zpK">
+                                <rect key="frame" x="18" y="258.5" width="378" height="31"/>
+                                <connections>
+                                    <action selector="volumeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="haE-Qz-MaN"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MYN-oG-3Qv" firstAttribute="top" secondItem="2H4-hE-Z6q" secondAttribute="bottom" constant="8" id="5Y4-Cv-Nsd"/>
+                            <constraint firstItem="4vh-WN-R1O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BeB-mp-SGX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TO0-3o-SH8" secondAttribute="trailing" id="Bgh-Gd-xr6"/>
+                            <constraint firstItem="Xnh-P8-DPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HKN-38-GDD"/>
+                            <constraint firstItem="Ulj-wC-zpK" firstAttribute="top" secondItem="MYN-oG-3Qv" secondAttribute="bottom" constant="30" id="MNu-XH-XCh"/>
+                            <constraint firstItem="Xnh-P8-DPK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q8Z-vL-ILS"/>
+                            <constraint firstItem="MYN-oG-3Qv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uwb-gx-Irq"/>
+                            <constraint firstItem="TO0-3o-SH8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a10-0p-ESI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4vh-WN-R1O" secondAttribute="trailing" id="b1X-eT-VGv"/>
+                            <constraint firstItem="Xnh-P8-DPK" firstAttribute="top" secondItem="TO0-3o-SH8" secondAttribute="bottom" constant="8" id="b8e-Tf-K2K"/>
+                            <constraint firstItem="2H4-hE-Z6q" firstAttribute="top" secondItem="Xnh-P8-DPK" secondAttribute="bottom" constant="8" id="byR-Mn-PvE"/>
+                            <constraint firstItem="Ulj-wC-zpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cD8-Ba-Gaj"/>
+                            <constraint firstItem="2H4-hE-Z6q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cWc-C7-Ljk"/>
+                            <constraint firstItem="2H4-hE-Z6q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dqd-bE-HaT"/>
+                            <constraint firstItem="MYN-oG-3Qv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i4B-Xg-J2a"/>
+                            <constraint firstItem="4vh-WN-R1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iGG-FW-6P2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ulj-wC-zpK" secondAttribute="trailing" constant="20" id="v3y-R6-XRo"/>
+                            <constraint firstItem="TO0-3o-SH8" firstAttribute="top" secondItem="4vh-WN-R1O" secondAttribute="bottom" constant="20" id="wZe-F0-SaP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel" destination="4vh-WN-R1O" id="ZxJ-Zq-UTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+    </scenes>
+</document>

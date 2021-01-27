@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF7A97D12440FC2000003192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A97D02440FC2000003192 /* AppDelegate.swift */; };
+		DF7A97D32440FC2000003192 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A97D22440FC2000003192 /* SceneDelegate.swift */; };
+		DF7A97D52440FC2000003192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A97D42440FC2000003192 /* ViewController.swift */; };
+		DF7A97D82440FC2000003192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A97D62440FC2000003192 /* Main.storyboard */; };
+		DF7A97DA2440FC2600003192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7A97D92440FC2600003192 /* Assets.xcassets */; };
+		DF7A97DD2440FC2600003192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A97DB2440FC2600003192 /* LaunchScreen.storyboard */; };
+		DF7A97E82440FC2600003192 /* QuitDownMomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A97E72440FC2600003192 /* QuitDownMomTests.swift */; };
+		DF7A97F32441003F00003192 /* sample_recording.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DF7A97F22441003F00003192 /* sample_recording.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF7A97E42440FC2600003192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7A97C52440FC2000003192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7A97CC2440FC2000003192;
+			remoteInfo = QuitDownMom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF7A97CD2440FC2000003192 /* QuitDownMom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuitDownMom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7A97D02440FC2000003192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF7A97D22440FC2000003192 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF7A97D42440FC2000003192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF7A97D72440FC2000003192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF7A97D92440FC2600003192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF7A97DC2440FC2600003192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF7A97DE2440FC2600003192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7A97E32440FC2600003192 /* QuitDownMomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuitDownMomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7A97E72440FC2600003192 /* QuitDownMomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitDownMomTests.swift; sourceTree = "<group>"; };
+		DF7A97E92440FC2600003192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7A97F22441003F00003192 /* sample_recording.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = sample_recording.m4a; path = ../../../Desktop/sample_recording.m4a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF7A97CA2440FC2000003192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A97E02440FC2600003192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF7A97C42440FC2000003192 = {
+			isa = PBXGroup;
+			children = (
+				DF7A97CF2440FC2000003192 /* QuitDownMom */,
+				DF7A97E62440FC2600003192 /* QuitDownMomTests */,
+				DF7A97CE2440FC2000003192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7A97CE2440FC2000003192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A97CD2440FC2000003192 /* QuitDownMom.app */,
+				DF7A97E32440FC2600003192 /* QuitDownMomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF7A97CF2440FC2000003192 /* QuitDownMom */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A97D02440FC2000003192 /* AppDelegate.swift */,
+				DF7A97D22440FC2000003192 /* SceneDelegate.swift */,
+				DF7A97D42440FC2000003192 /* ViewController.swift */,
+				DF7A97F22441003F00003192 /* sample_recording.m4a */,
+				DF7A97D62440FC2000003192 /* Main.storyboard */,
+				DF7A97D92440FC2600003192 /* Assets.xcassets */,
+				DF7A97DB2440FC2600003192 /* LaunchScreen.storyboard */,
+				DF7A97DE2440FC2600003192 /* Info.plist */,
+			);
+			path = QuitDownMom;
+			sourceTree = "<group>";
+		};
+		DF7A97E62440FC2600003192 /* QuitDownMomTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A97E72440FC2600003192 /* QuitDownMomTests.swift */,
+				DF7A97E92440FC2600003192 /* Info.plist */,
+			);
+			path = QuitDownMomTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF7A97CC2440FC2000003192 /* QuitDownMom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7A97EC2440FC2600003192 /* Build configuration list for PBXNativeTarget "QuitDownMom" */;
+			buildPhases = (
+				DF7A97C92440FC2000003192 /* Sources */,
+				DF7A97CA2440FC2000003192 /* Frameworks */,
+				DF7A97CB2440FC2000003192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuitDownMom;
+			productName = QuitDownMom;
+			productReference = DF7A97CD2440FC2000003192 /* QuitDownMom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF7A97E22440FC2600003192 /* QuitDownMomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7A97EF2440FC2600003192 /* Build configuration list for PBXNativeTarget "QuitDownMomTests" */;
+			buildPhases = (
+				DF7A97DF2440FC2600003192 /* Sources */,
+				DF7A97E02440FC2600003192 /* Frameworks */,
+				DF7A97E12440FC2600003192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7A97E52440FC2600003192 /* PBXTargetDependency */,
+			);
+			name = QuitDownMomTests;
+			productName = QuitDownMomTests;
+			productReference = DF7A97E32440FC2600003192 /* QuitDownMomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF7A97C52440FC2000003192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Carlos Huang";
+				TargetAttributes = {
+					DF7A97CC2440FC2000003192 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					DF7A97E22440FC2600003192 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DF7A97CC2440FC2000003192;
+					};
+				};
+			};
+			buildConfigurationList = DF7A97C82440FC2000003192 /* Build configuration list for PBXProject "QuitDownMom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF7A97C42440FC2000003192;
+			productRefGroup = DF7A97CE2440FC2000003192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF7A97CC2440FC2000003192 /* QuitDownMom */,
+				DF7A97E22440FC2600003192 /* QuitDownMomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF7A97CB2440FC2000003192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7A97DD2440FC2600003192 /* LaunchScreen.storyboard in Resources */,
+				DF7A97DA2440FC2600003192 /* Assets.xcassets in Resources */,
+				DF7A97F32441003F00003192 /* sample_recording.m4a in Resources */,
+				DF7A97D82440FC2000003192 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A97E12440FC2600003192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF7A97C92440FC2000003192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7A97D52440FC2000003192 /* ViewController.swift in Sources */,
+				DF7A97D12440FC2000003192 /* AppDelegate.swift in Sources */,
+				DF7A97D32440FC2000003192 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A97DF2440FC2600003192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7A97E82440FC2600003192 /* QuitDownMomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF7A97E52440FC2600003192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7A97CC2440FC2000003192 /* QuitDownMom */;
+			targetProxy = DF7A97E42440FC2600003192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF7A97D62440FC2000003192 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF7A97D72440FC2000003192 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF7A97DB2440FC2600003192 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF7A97DC2440FC2600003192 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF7A97EA2440FC2600003192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF7A97EB2440FC2600003192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF7A97ED2440FC2600003192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MM455Q38MT;
+				INFOPLIST_FILE = QuitDownMom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my-org.QuitDownMom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF7A97EE2440FC2600003192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MM455Q38MT;
+				INFOPLIST_FILE = QuitDownMom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my-org.QuitDownMom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF7A97F02440FC2600003192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuitDownMomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my-org.QuitDownMomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuitDownMom.app/QuitDownMom";
+			};
+			name = Debug;
+		};
+		DF7A97F12440FC2600003192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuitDownMomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my-org.QuitDownMomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuitDownMom.app/QuitDownMom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF7A97C82440FC2000003192 /* Build configuration list for PBXProject "QuitDownMom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A97EA2440FC2600003192 /* Debug */,
+				DF7A97EB2440FC2600003192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7A97EC2440FC2600003192 /* Build configuration list for PBXNativeTarget "QuitDownMom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A97ED2440FC2600003192 /* Debug */,
+				DF7A97EE2440FC2600003192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7A97EF2440FC2600003192 /* Build configuration list for PBXNativeTarget "QuitDownMomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A97F02440FC2600003192 /* Debug */,
+				DF7A97F12440FC2600003192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF7A97C52440FC2000003192 /* Project object */;
+}

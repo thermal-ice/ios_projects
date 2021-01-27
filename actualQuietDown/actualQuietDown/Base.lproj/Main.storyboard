@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3HJ-fs-jDq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quiet Down Mom!-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="actualQuietDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngl-sp-rN2">
+                                <rect key="frame" x="100" y="98" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-eb-qTD">
+                                <rect key="frame" x="203" y="178" width="31" height="30"/>
+                                <state key="normal" title="20%"/>
+                                <connections>
+                                    <action selector="fifthVolumeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehh-oB-Hrz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIA-b8-hzA">
+                                <rect key="frame" x="354" y="178" width="30" height="30"/>
+                                <state key="normal" title="0%"/>
+                                <connections>
+                                    <action selector="zeroVolumeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjP-nx-blt"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GjI-vd-Rih">
+                                <rect key="frame" x="3" y="258" width="408" height="31"/>
+                                <connections>
+                                    <action selector="changeVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="B7G-hd-GTB"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isd-uJ-soN">
+                                <rect key="frame" x="52" y="178" width="31" height="30"/>
+                                <state key="normal" title="50%"/>
+                                <connections>
+                                    <action selector="halfVolumeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKs-4C-HDO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u0g-eb-qTD" firstAttribute="top" secondItem="Ngl-sp-rN2" secondAttribute="bottom" constant="59" id="6AN-Di-pDE"/>
+                            <constraint firstItem="GjI-vd-Rih" firstAttribute="top" secondItem="u0g-eb-qTD" secondAttribute="bottom" constant="50" id="74w-Wd-vwg"/>
+                            <constraint firstItem="GjI-vd-Rih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Fqo-QI-AZZ"/>
+                            <constraint firstItem="Ngl-sp-rN2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="LqW-1p-U5k"/>
+                            <constraint firstItem="EIA-b8-hzA" firstAttribute="leading" secondItem="u0g-eb-qTD" secondAttribute="trailing" constant="120" id="Phl-rP-M6z"/>
+                            <constraint firstItem="u0g-eb-qTD" firstAttribute="leading" secondItem="Isd-uJ-soN" secondAttribute="trailing" constant="120" id="QQ0-EI-9eK"/>
+                            <constraint firstItem="EIA-b8-hzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="Uhc-Ok-OjL"/>
+                            <constraint firstItem="Isd-uJ-soN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="bBt-PP-pmu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GjI-vd-Rih" secondAttribute="trailing" constant="5" id="eJi-E0-0LP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EIA-b8-hzA" secondAttribute="trailing" constant="30" id="id5-KA-rz6"/>
+                            <constraint firstItem="Ngl-sp-rN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="it8-vE-sNT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quiet Down Mom!" id="dmd-GE-Ljz"/>
+                    <connections>
+                        <outlet property="connectionsLabel" destination="Ngl-sp-rN2" id="BKW-pc-IIZ"/>
+                        <outlet property="volumeSlider" destination="GjI-vd-Rih" id="rRD-BK-ZRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mAc-Ch-jDJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3HJ-fs-jDq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qf1-fh-RKj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7MQ-Dq-zvW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eek-WA-x0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+</document>

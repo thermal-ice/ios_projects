@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDY-Dg-0H1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Actual BLE App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="actualBLEApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdY-NZ-5Xq">
+                                <rect key="frame" x="182" y="158" width="50" height="30"/>
+                                <state key="normal" title="Central"/>
+                                <connections>
+                                    <segue destination="6uH-7K-y8d" kind="show" id="TGC-hp-4zs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6L-6s-CZM">
+                                <rect key="frame" x="172" y="288" width="70" height="30"/>
+                                <state key="normal" title="Periperhal"/>
+                                <connections>
+                                    <segue destination="uWe-5t-R6E" kind="show" id="hD4-W2-Ia5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w6L-6s-CZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="PXq-1W-qbg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TdY-NZ-5Xq" secondAttribute="trailing" constant="182" id="dbJ-su-tvR"/>
+                            <constraint firstItem="TdY-NZ-5Xq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="qht-6S-xqD"/>
+                            <constraint firstItem="w6L-6s-CZM" firstAttribute="top" secondItem="TdY-NZ-5Xq" secondAttribute="bottom" constant="100" id="qlN-hM-HN7"/>
+                            <constraint firstItem="TdY-NZ-5Xq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="rOo-qD-oGi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w6L-6s-CZM" secondAttribute="trailing" constant="172" id="xqj-xn-BqA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Actual BLE App" id="Zdr-5x-sHb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Peripheral-->
+        <scene sceneID="JvP-03-hyd">
+            <objects>
+                <viewController id="uWe-5t-R6E" customClass="PeripheralViewController" customModule="actualBLEApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mbF-qD-InM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-nF-rH4">
+                                <rect key="frame" x="28" y="238" width="358" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="uWe-5t-R6E" eventType="valueChanged" id="DkX-5u-sKB"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBK-I7-MbV">
+                                <rect key="frame" x="195" y="318" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LBK-I7-MbV" firstAttribute="leading" secondItem="vjm-Hd-AEt" secondAttribute="leading" constant="195" id="ApC-gZ-SEV"/>
+                            <constraint firstItem="a5M-nF-rH4" firstAttribute="leading" secondItem="vjm-Hd-AEt" secondAttribute="leading" constant="30" id="g50-cN-eF1"/>
+                            <constraint firstItem="LBK-I7-MbV" firstAttribute="top" secondItem="a5M-nF-rH4" secondAttribute="bottom" constant="50" id="kNb-2e-Qdw"/>
+                            <constraint firstItem="a5M-nF-rH4" firstAttribute="top" secondItem="vjm-Hd-AEt" secondAttribute="top" constant="150" id="tYc-Bn-Yb6"/>
+                            <constraint firstItem="vjm-Hd-AEt" firstAttribute="trailing" secondItem="a5M-nF-rH4" secondAttribute="trailing" constant="30" id="x4c-xE-ZRe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vjm-Hd-AEt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peripheral" id="73m-qQ-12d"/>
+                    <connections>
+                        <outlet property="volumeLabel" destination="LBK-I7-MbV" id="HaB-Wz-mx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EV7-qr-Rm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2197.1014492753625" y="612.72321428571422"/>
+        </scene>
+        <!--Central-->
+        <scene sceneID="eeS-Xr-iTm">
+            <objects>
+                <viewController id="6uH-7K-y8d" customClass="CentralViewController" customModule="actualBLEApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1L-0d-VQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fH-YN-g1C">
+                                <rect key="frame" x="186" y="128" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5fH-YN-g1C" firstAttribute="top" secondItem="RsW-eI-546" secondAttribute="top" constant="40" id="Zwo-AX-dME"/>
+                            <constraint firstItem="5fH-YN-g1C" firstAttribute="leading" secondItem="RsW-eI-546" secondAttribute="leading" constant="186" id="tyi-oU-ykM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RsW-eI-546"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Central" id="FLa-V0-eFj"/>
+                    <connections>
+                        <outlet property="volumeLabel" destination="5fH-YN-g1C" id="Lld-cY-j5I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6k-wK-XeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137" y="-208"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HTw-AR-Jya">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDY-Dg-0H1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wlv-iI-F69">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rmO-Vd-ACn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5US-xV-etf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
